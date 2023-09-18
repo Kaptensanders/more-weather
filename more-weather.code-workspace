@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../config"
+		},
+		{
+			"path": "../../usr/src/homeassistant/homeassistant"
+		}
+	],
+	"settings": {}
+}

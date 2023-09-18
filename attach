@@ -1,0 +1,2 @@
+#!/bin/bash
+docker exec -it hass-more-weather-dev /bin/bash

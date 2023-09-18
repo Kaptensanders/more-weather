@@ -1,0 +1,42 @@
+{
+    "config": {
+      "step": {
+        "user": {
+          "title": "More Weather",
+          "description": "Set up a new location",
+          "data": {
+            "name": "Name",
+            "service": "Service",
+            "latitude": "Latitude",
+            "longitude": "Longitude",
+            "elevation": "Elevation"
+          }
+        }
+      },
+      "error": {
+        "already_configured": "A device with the same name and service provider is already configured"
+      },
+      "abort": {
+        "no_home": "No home coordinates are set in the Home Assistant configuration"
+      }
+    },
+    "options": {
+      "step": {
+        "init": {
+          "title": "More Weather",
+          "description": "Note that changing values may result in renamed entities",
+          "data": {
+            "name": "Name",
+            "service": "Service",
+            "latitude": "Latitude",
+            "longitude": "Longitude",
+            "elevation": "Elevation"
+          }
+        }
+      },
+      "abort": {
+        "updated": "The device and its entities was updated. Review the entities page and remove entities no longer provided by this integration."
+      }
+    }
+}
+  

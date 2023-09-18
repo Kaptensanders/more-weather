@@ -1,0 +1,8 @@
+mode: storage
+dashboards:
+  lovelace-padpanel:
+    mode: yaml
+    title: More Weather
+    icon: mdi:home
+    show_in_sidebar: true
+    filename: panel.yaml
