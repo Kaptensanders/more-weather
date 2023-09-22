@@ -4,11 +4,13 @@
 			"path": "."
 		},
 		{
-			"path": "../../config"
-		},
-		{
-			"path": "../../usr/src/homeassistant/homeassistant"
+			"path": "../../usr/src/homeassistant"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"files.exclude": {
+			"**/__pycache__": true,
+			"**/.pytest_cache": true
+		}
+	}
 }

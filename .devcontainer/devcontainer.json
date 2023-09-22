@@ -1,19 +1,17 @@
 {
   "name": "hass-more-weather-dev",
-  "//image": "kaptensanders/hass-custom-devcontainer",
+  "//image": "kaptensanders/hass_dev_image",
   "image": "hass_dev_image",
-  "postCreateCommand": "sudo -E ENV_FILE=/workspaces/more-weather/.devcontainer/setup.env container setup-project",
+  "postCreateCommand": "container setup-project",
   "containerEnv": {},
   "appPort": ["8123:8123"],
+  "remoteUser": "vscode",
   "mounts": [
-    "source=${localWorkspaceFolder}/custom_components/moreweather,target=/config/custom_components/moreweather,type=bind",
-    "source=${localWorkspaceFolder}/test/append_ha_config.yaml,target=/config/append_ha_config.yaml,type=bind",
-    "source=${localWorkspaceFolder}/test/logger.yaml,target=/config/logger.yaml,type=bind",
-    "source=${localWorkspaceFolder}/test/sensors.yaml,target=/config/sensors.yaml,type=bind",
-    "source=${localWorkspaceFolder}/test/lovelace.yaml,target=/config/lovelace.yaml,type=bind",
-    "source=${localWorkspaceFolder}/test/panel.yaml,target=/config/panel.yaml,type=bind"
   ],
-  "runArgs": ["--name", "hass-more-weather-dev"],
+  "runArgs": [
+    "--name", "hass-more-weather-dev",
+    "--env-file",".devcontainer/container.env"
+  ],
   "customizations":{
     "vscode": {
     }
